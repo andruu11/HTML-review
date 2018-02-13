@@ -1,0 +1,43 @@
+@font-face {
+font-family: "Roboto-Ligth";
+src: url(../fonts/Roboto-Light.ttf) format("truetype");
+}
+*{
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 auto;
+	font-family: "Roboto-Ligth";
+}
+
+body{
+	background-color: #424242;
+	font-size: 16px;
+}
+main{
+	margin:auto;
+	widows: 90%;
+}
+img.logo{
+	align-content: center;
+	margin-top: 20px;
+	width: 100px;
+	height: 100px;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: #FAFAFA;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	text-align: center;
+
+}
+ul.lista li.item{
+	color: #E54C21;
+	list-style: square;
+	margin-left: 10px;
+}
+ul.lista li.item a.enlace{
+	color: #F26525;
+	text-decoration: none;
+	font-size: 1.2em;
+}
