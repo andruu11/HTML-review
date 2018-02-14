@@ -20,25 +20,43 @@ body{
 }
 .codigo{
 	padding: 50px;
+	padding-bottom: 20px;
 }
 
 img.logo{
-	align-content: center;
-	margin-top: 0 px;
-	width: 100px;
-	height: 100px;
-}
-img.boton{
 	align-content: center;
 	margin-top: 20px;
 	width: 100px;
 	height: 100px;
 }
-h1, h2, h3, h4, h5, h6 {
+img.boton{
+	align-content: center;
+	margin-top: 0px;
+	width: 100px;
+	height: 100px;
+}
+h1, h2, h4, h5, h6 {
 	color: #424242;
 	margin-bottom: 10px;
 	margin-top: 30px;
 	text-align: center;
+}
+h3{
+	color: #424242;
+	margin-bottom: 10px;
+	margin-top: 30px;
+	
+}
+
+ul.lista li.item{
+	color: #E54C21;
+	list-style: square;
+	margin-left: 10px;
+}
+ul.lista li.item a.enlace{
+	color: #F26525;
+	text-decoration: none;
+	font-size: 1.2em;
 }
 /*media queries para css*/
 @media only screen and (max-width: 500px) {

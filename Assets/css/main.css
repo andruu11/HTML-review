@@ -7,16 +7,19 @@ src: url(../fonts/Roboto-Light.ttf) format("truetype");
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0 auto;
+
 	font-family: "Roboto-Ligth";
 }
 
 body{
 	background-color: #424242;
 	font-size: 16px;
+	margin-bottom: 50px;
 }
 main{
 	margin:auto;
 	widows: 90%;
+
 }
 img.logo{
 	align-content: center;

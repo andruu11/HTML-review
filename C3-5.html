@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<link rel="stylesheet" href="Assets/css/prism.css">
+	<link rel="stylesheet" href="Assets/css/class.css">
+	<title>HTML5</title>
+</head>
+<body>
+	<div class="contenido">
+		<h2>Twitter Card</h2>
+	</div>
+	<div class="codigo">
+			<section>
+			<p>Sos microdatos son un tipo de atributos que se colocan en las  etiquetas para que la busqueda de Twitter sea mas eficiente.
+			Tipos de tarjeta: </p>
+			<ul>
+			<li>Sumary card: Tarjeta sencilla del sitio.</li>
+			<li>Summary card large: Tarjeta larga descriptiva del sitio.</li>
+			<li>App card : Promocionar alguna App.</li>
+			<li>Play card: Tarjeta para multimedia.</li>
+			 </ul>
+			 <p>Aplicación del twitter card</p>
+			 <ul>
+			 	<li>Colocar una etiqueta meta</li>
+			 	<li>Instanciar  en name="twitter:tipo" (El tipo se extrae del sitio twitter card)</li>
+			 	<li>Instanciar en content el contenido segun el tipo</li>
+			 </ul>
+			 <p>* El link para la busqueda de  tipos es: <a href="https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started">Twitter Card</a></p>
+			 <p>* El link para verificar si nuestros microdatos estan aplicados de manera correcta: <a href="https://cards-dev.twitter.com/validator">Card Validator</a></p>
+			<h3>Codigo :</h3>
+			
+				<pre rel="HTML">
+					<code class="language-html line-numbers" style="white-space: pre-wrap;">
+					&lt;!DOCTYPE html&gt;
+					&lt;html&gt;
+					&lt;head&gt;
+						&lt;meta charset="utf-8"&gt;
+						&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+						&lt;meta name="twitter:url" content="www.html.com" /&gt;
+						&lt;meta name="twitter:card"  content="sumary_large_image" /&gt;
+						&lt;meta name="twitter:image" content="http://www.html.com/images/portada.jpg" /&gt;
+						&lt;meta name="twitter:description" content="Sitio guia de HTML5" /&gt;
+						&lt;meta name="twitter:tittle" content="HTML5" /&gt;
+						&lt;meta name="twitter:site" content="@HTML5" /&gt;
+						&lt;title&gt;Prueba de Twitter Card&lt;/title&gt;
+					&lt;/head&gt;
+					&lt;body&gt;
+					&lt;/body&gt;
+					&lt;/html&gt;
+					</code>
+				</pre>
+						
+			</section>
+	</div>
+	<center><a href="index.html"><img src="Assets/img/boton.jpg" class="boton" alt="Regresar"></a></center>
+	<script src="Assets/js/prism.js" type="text/javascript"></script>
+</body>
+</html>
+
+

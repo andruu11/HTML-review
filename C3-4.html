@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<link rel="stylesheet" href="Assets/css/prism.css">
+	<link rel="stylesheet" href="Assets/css/class.css">
+	<title>HTML5</title>
+</head>
+<body>
+	<div class="contenido">
+		<h2>Open Graph</h2>
+	</div>
+	<div class="codigo">
+			<section>
+			<p>Sos microdatos son un tipo de atributos que se colocan en las  etiquetas para que la busqueda de Facebook sea mas eficiente.
+			Cotiene: </p>
+			<ul>
+			<li>Prefix: Url de prefix de Open Graph debe ubicarse en la etiqueta HTML.</li>
+			<li>meta : colocar un meta property = "og:type".</li>
+			<li>meta : El meta debe ir en el head.</li>
+			<li>content : dentro la etiqueta meta debe haber un content que referencie el contenido segun el typo de OG.</li>
+			 </ul>
+			 <p>* El link para la busqueda de prefix y tipos es: <a href="http://ogp.me/">ogp.me</a></p>
+			 <p>* El link para verificar si nuestros microdatos estan aplicados de manera correcta: <a href="https://developers.facebook.com/tools/debug/sharing/">Sharing Debugger Facebook</a></p>
+			<h3>Codigo :</h3>
+			
+				<pre rel="HTML">
+					<code class="language-html line-numbers" style="white-space: pre-wrap;">
+					&lt;!DOCTYPE html&gt;
+					&lt;html prefix="og: http://ogp.me/ns#"&gt;
+					&lt;head&gt;
+						&lt;meta charset="utf-8"&gt;
+						&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+						&lt;meta property="og:title" content="Prueba de Open Graph" /&gt;
+						&lt;meta property="og:type" content="website" /&gt;
+						&lt;meta property="og:url" content="http://prueba.html" /&gt;
+						&lt;meta property="og:image" content="http://ia.media-imdb.com/images/rock.jpg" /&gt;
+						&lt;title&gt;Prueba de open Graph&lt;/title&gt;
+					&lt;/head&gt;
+					&lt;body&gt;
+					&lt;/body&gt;
+					&lt;/html&gt;
+					</code>
+				</pre>
+						
+			</section>
+	</div>
+	<center><a href="index.html"><img src="Assets/img/boton.jpg" class="boton" alt="Regresar"></a></center>
+	<script src="Assets/js/prism.js" type="text/javascript"></script>
+</body>
+</html>
+
+
