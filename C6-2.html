@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<link rel="stylesheet" href="Assets/css/prism.css">
+	<link rel="stylesheet" href="Assets/css/class.css">
+	<title>HTML5</title>
+</head>
+<body>
+	<div class="contenido">
+		<h2>Input text, label y placeholder</h2>
+	</div>
+	<div class="codigo">
+			<section>
+			<p>- Descripción: Un input siempre debe ir asociado a un label.</p>
+			<p>- label: Esta etiqueta nos permite mostrar datos, si dentro de esta etiqueta agrupamos una etiqueta input la estariamos asociando.</p>
+			<p>- label for: Esta etiqueta nos permite mostrar datos, en caso de no desear agrupar el input dentro la etiqueta label, se debe colocar un id al input y en el atributo for del label indicar el mismo valor, para asi esten asociados.</p>
+			<p>- placeholder: El atributo placeholder muestra un mensaje dentro del input.</p>
+			<p>- value: El atributo value otorga un valor por defecto al input.</p>
+			
+			<h3>Codigo :</h3>
+			
+				<pre rel="HTML">
+					<code class="language-html line-numbers" style="white-space: pre-wrap;">
+					&lt;form action="script.php" method="post" autocomplete="off"&gt;
+						&lt;label&gt;Nombres: &lt;input type="text" value="Jose Enrrique"&gt;&lt;/label&gt;&lt;br&gt;&lt;br&gt;
+						&lt;label for="apellidos"&gt;Apellidos&lt;/label&gt;
+
+						&lt;input type="text" id="apellidos" name="apellidos" placeholder="complete su apellido" &gt;&lt;br&gt;&lt;br&gt;
+						&lt;button&gt;Registrar&lt;/button&gt;
+					&lt;/form&gt;
+					</code>
+				</pre>
+			<h3>Ejemplo :</h3>
+			<form action="script.php" method="post" autocomplete="off">
+				<label>Nombres: <input type="text" value="Jose Enrrique"></label><br><br>
+				<label for="apellidos">Apellidos</label>
+
+				<input type="text" id="apellidos" name="apellidos" placeholder="complete su apellido" ><br><br>
+				<button>Registrar</button>
+			</form>
+
+	</div>
+	<center><a href="index.html"><img src="Assets/img/boton.jpg" class="boton" alt="Regresar"></a></center>
+	<script src="Assets/js/prism.js" type="text/javascript"></script>
+</body>
+</html>
+

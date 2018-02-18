@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<link rel="stylesheet" href="Assets/css/prism.css">
+	<link rel="stylesheet" href="Assets/css/class.css">
+	<title>HTML5</title>
+</head>
+<body>
+	<div class="contenido">
+		<h2>Tipos de input</h2>
+	</div>
+	<div class="codigo">
+			<section>
+			<p>- input text: Es un campo para introducir texto.</p>
+			<p>- input email: Es un campo para introducir emails.</p>
+			<p>- input tel: Es un campo para introducir telefono o celular, mejor visibilidad en moviles.</p>
+			<p>- input date: Es un campo para introducir fecha .</p>
+			<p>- input time: Es un campo para introducir horas y minutos .</p>
+			<p>- input num: Es un campo para introducir solo numeros .</p>
+			<p>- input url: Es un campo para introducir enlaces o url´s .</p>
+			<p>- input password: Es un campo para introducir contraseñas .</p>
+			<p>- input url: Es un campo para introducir datos y se produzca su busqueda .</p>
+			<p>- input color: Es un campo para introducir colores.</p>
+			<p>- input color: Es un campo para introducir un valor numerico segun una barra.</p>
+			<p>- input file: Es un campo para introducir los ficheros o archivos.</p>
+			<p>- input radio: Es un campo para realizar una seleccion.</p>
+			<p>- input checkbox: Es un campo para realizar seleccion multiple.</p>
+			<p>- input reset: Es un campo para limpiar el formulario.</p>
+			<h3>Codigo :</h3>
+			
+				<pre rel="HTML">
+					<code class="language-html line-numbers" style="white-space: pre-wrap;">
+					&lt;form action="script.php" method="post" autocomplete="off"&gt;
+						&lt;label for="datos"&gt;Nombre y Apellidos:&lt;/label&gt;
+						&lt;input type="text" id="datos" placeholder="Complete sus datos"&gt;
+						&lt;br&gt;&lt;br&gt;
+						&lt;label for="email"&gt;Email:&lt;/label&gt;
+						&lt;input type="email" id="email" placeholder="Complete su email"&gt;
+						&lt;br&gt;&lt;br&gt;
+						&lt;label for="telefono"&gt;Telefono:&lt;/label&gt;
+						&lt;input type="email" id="telefono" placeholder="Complete su telefono"&gt;
+						&lt;br&gt;&lt;br&gt;
+						&lt;label for="fecha"&gt;Fecha de nacimiento:&lt;/label&gt;
+						&lt;input type="date" id="fecha" placeholder="Complete su fecha de nacimiento"&gt;
+						&lt;br&gt;&lt;br&gt;
+						&lt;label for="hora"&gt;Hora de nacimiento:&lt;/label&gt;
+						&lt;input type="time" id="hora" placeholder="Complete la hora"&gt;
+						&lt;br&gt;&lt;br&gt;
+						&lt;label for="hijos"&gt;Cant. hijos:&lt;/label&gt;
+						&lt;input type="number" id="hijos" placeholder="Complete la cantidad de hijos"&gt;
+						&lt;br&gt;&lt;br&gt;
+						&lt;label for="sitio"&gt;URL de su sitio:&lt;/label&gt;
+						&lt;input type="url" id="sitio" placeholder="Complete la URL de su sitio"&gt;
+						&lt;br&gt;&lt;br&gt;
+						&lt;label for="contraseña"&gt;Password:&lt;/label&gt;
+						&lt;input type="password" id="contraseña" placeholder="Complete su password"&gt;
+						&lt;br&gt;&lt;br&gt;
+						&lt;label for="buscar"&gt;Busqueda:&lt;/label&gt;
+						&lt;input type="search" id="buscar" placeholder="Complete el dato de busqueda"&gt;
+						&lt;br&gt;&lt;br&gt;
+						&lt;label for="colores"&gt;Colores:&lt;/label&gt;
+						&lt;input type="color" id="colores" placeholder="Complete un color"&gt;
+						&lt;br&gt;&lt;br&gt;
+						&lt;label for="rango"&gt;Rango:&lt;/label&gt;
+						&lt;input type="range" id="rango" min="0" max="100" step="10"&gt;
+						&lt;br&gt;&lt;br&gt;
+						&lt;label for="archivo"&gt;Seleccione un archivo:&lt;/label&gt;
+						&lt;input type="file" id="archivo"&gt;
+						&lt;br&gt;&lt;br&gt;
+						&lt;!--input radio--&gt;
+						&lt;label&gt;
+							&lt;input type="radio" name="genero"&gt;Femenino
+						&lt;/label&gt;
+						&lt;label&gt;
+							&lt;input type="radio" name="genero"&gt;Masculino
+						&lt;/label&gt;
+						&lt;!--fin input radio--&gt;
+						&lt;br&gt;&lt;br&gt;
+						&lt;!--checkbox--&gt;
+						&lt;label&gt;
+							&lt;input type="checkbox" checked name="categorias"&gt;Deportes
+						&lt;/label&gt;
+						&lt;label&gt;
+							&lt;input type="checkbox" name="categorias"&gt;Musica
+						&lt;/label&gt;
+						&lt;label&gt;
+							&lt;input type="checkbox" name="categorias"&gt;Arte
+						&lt;/label&gt;
+						&lt;!--fin checkbox--&gt;
+						&lt;br&gt;&lt;br&gt;
+						&lt;button&gt;Registrarse&lt;/button&gt;
+						&lt;input type="reset" value="Limpiar"&gt;
+					&lt;/form&gt;
+		
+					</code>
+				</pre>
+			<h3>Ejemplo :</h3>
+			<form action="script.php" method="post" autocomplete="off">
+				<label for="datos">Nombre y Apellidos:</label>
+				<input type="text" id="datos" placeholder="Complete sus datos">
+				<br><br>
+				<label for="email">Email:</label>
+				<input type="email" id="email" placeholder="Complete su email">
+				<br><br>
+				<label for="telefono">Telefono:</label>
+				<input type="email" id="telefono" placeholder="Complete su telefono">
+				<br><br>
+				<label for="fecha">Fecha de nacimiento:</label>
+				<input type="date" id="fecha" placeholder="Complete su fecha de nacimiento">
+				<br><br>
+				<label for="hora">Hora de nacimiento:</label>
+				<input type="time" id="hora" placeholder="Complete la hora">
+				<br><br>
+				<label for="hijos">Cant. hijos:</label>
+				<input type="number" id="hijos" placeholder="Complete la cantidad de hijos">
+				<br><br>
+				<label for="sitio">URL de su sitio:</label>
+				<input type="url" id="sitio" placeholder="Complete la URL de su sitio">
+				<br><br>
+				<label for="contraseña">Password:</label>
+				<input type="password" id="contraseña" placeholder="Complete su password">
+				<br><br>
+				<label for="buscar">Busqueda:</label>
+				<input type="search" id="buscar" placeholder="Complete el dato de busqueda">
+				<br><br>
+				<label for="colores">Colores:</label>
+				<input type="color" id="colores" placeholder="Complete un color">
+				<br><br>
+				<label for="rango">Rango:</label>
+				<input type="range" id="rango" min="0" max="100" step="10">
+				<br><br>
+				<label for="archivo">Seleccione un archivo:</label>
+				<input type="file" id="archivo">
+				<br><br>
+				<!--input radio-->
+				<label>
+					<input type="radio" name="genero">Femenino
+				</label>
+				<label>
+					<input type="radio" name="genero">Masculino
+				</label>
+				<!--fin input radio-->
+				<br><br>
+				<!--input radio-->
+				<label>
+					<input type="checkbox" checked name="categorias">Deportes
+				</label>
+				<label>
+					<input type="checkbox" name="categorias">Musica
+				</label>
+				<label>
+					<input type="checkbox" name="categorias">Arte
+				</label>
+				<!--fin input radio-->
+				<br><br>
+				<button>Registrarse</button>
+				<input type="reset" value="Limpiar">
+			</form>
+
+	</div>
+	<center><a href="index.html"><img src="Assets/img/boton.jpg" class="boton" alt="Regresar"></a></center>
+	<script src="Assets/js/prism.js" type="text/javascript"></script>
+</body>
+</html>
+

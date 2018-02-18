@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<link rel="stylesheet" href="Assets/css/prism.css">
+	<link rel="stylesheet" href="Assets/css/class.css">
+	<title>HTML5</title>
+</head>
+<body>
+	<div class="contenido">
+		<h2>Audio y Video</h2>
+	</div>
+	<div class="codigo">
+			<section>
+			<h3>1)  Video </h3>
+			<p>Descripción:  La etiqueta img nos sirve para invocar una imagen.</p>
+			<p>- controls: Etiqueta para mostrar controles.</p>
+			<p>- autoplay: Etiqueta para reproducir automaticamente.</p>
+			<p>- poster: Etiqueta para mostrar un banner o imagen antes de reproduccir el video.</p>
+			<p>- muted: Etiqueta para silenciar el video al reproducir, y asi el usuario pueda activar el sonido.</p>
+			<h3>Codigo :</h3>
+			
+				<pre rel="HTML">
+					<code class="language-html line-numbers" style="white-space: pre-wrap;">
+						&lt;video src="Assets/img/Video_prueba.mp4" width="500px" controls poster="Assets/img/Pacman.png" muted&gt;&lt;/video&gt;
+					</code>
+				</pre>
+			<h3>Ejemplo :</h3>
+			<video src="Assets/img/Video_prueba.mp4" width="500px" controls poster="Assets/img/Pacman.png" muted></video>
+			</section>
+
+			<section>
+			<h3>2)  audio </h3>
+			<p>Descripción: esta etiqueta se utiliza para reproducir archivos en formato de audio.</p>
+			<p>- controls: Etiqueta para mostrar controles.</p>
+			<p>- autoplay: Etiqueta para reproducir automaticamente.</p>
+			<p>- loop: bucle de reproducción</p>
+			<p>- preload: precarga contenido al ingresar a la pagina</p>
+			<h3>Codigo :</h3>
+			
+				<pre rel="HTML">
+					<code class="language-html line-numbers" style="white-space: pre-wrap;">
+					&lt;audio src="Assets/img/Audio_prueba.mp3" controls&gt;&lt;/audio&gt;	
+					</code>
+				</pre>
+			<h3>Ejemplo :</h3>
+			<audio src="Assets/img/Audio_prueba.mp3" controls></audio>
+			</section>
+	</div>
+	<center><a href="index.html"><img src="Assets/img/boton.jpg" class="boton" alt="Regresar"></a></center>
+	<script src="Assets/js/prism.js" type="text/javascript"></script>
+</body>
+</html>
+

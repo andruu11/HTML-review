@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<link rel="stylesheet" href="Assets/css/prism.css">
+	<link rel="stylesheet" href="Assets/css/class.css">
+	<title>HTML5</title>
+</head>
+<body>
+	<div class="contenido">
+		<h2>Etiqueta Picture</h2>
+	</div>
+	<div class="codigo">
+			<section>
+			<p>Descripción:  Podemos trabajar una determinada imagen segun resolucion de patalla (media queryes).</p>
+			<h3>Codigo :</h3>
+			
+				<pre rel="HTML">
+					<code class="language-html line-numbers" style="white-space: pre-wrap;">
+					&lt;picture&gt;
+						&lt;!--Art Direction --&gt;
+						&lt;source srcset="Assets/img/an-nor.png" media="(min-width: 640px)"&gt;
+						&lt;img src="Assets/img/an-res.png" alt="Anonymus"&gt;
+					&lt;/picture&gt;
+					</code>
+				</pre>
+			<h3>Ejemplo :</h3>
+			<picture>
+				<!--Art Direction -->
+				<source srcset="Assets/img/an-nor.png" media="(min-width: 640px)">
+				<img src="Assets/img/an-res.png" alt="Anonymus">
+			</picture>
+			</section>
+	</div>
+	<center><a href="index.html"><img src="Assets/img/boton.jpg" class="boton" alt="Regresar"></a></center>
+	<script src="Assets/js/prism.js" type="text/javascript"></script>
+</body>
+</html>
+

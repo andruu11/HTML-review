@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<link rel="stylesheet" href="Assets/css/prism.css">
+	<link rel="stylesheet" href="Assets/css/class.css">
+	<title>HTML5</title>
+</head>
+<body>
+	<div class="contenido">
+		<h2>Etiquetas de imagen</h2>
+	</div>
+	<div class="codigo">
+			<section>
+			<h3>1)  img </h3>
+			<p>Descripción:  La etiqueta img nos sirve para invocar una imagen.</p>
+			<h3>Codigo :</h3>
+			
+				<pre rel="HTML">
+					<code class="language-html line-numbers" style="white-space: pre-wrap;">
+					&lt;img src="Assets/img/Pacman.png" alt="Imagen de pacman" width="100px" height="100px"&gt;
+					</code>
+				</pre>
+			<h3>Ejemplo :</h3>
+			<img src="Assets/img/Pacman.png" alt="Imagen de pacman" width="100px" height="100px">
+			</section>
+
+			<section>
+			<h3>2)  srcset px </h3>
+			<p>Descripción: esta etiqueta se utiliza segun la variación de pixeles.</p>
+			<h3>Codigo :</h3>
+			
+				<pre rel="HTML">
+					<code class="language-html line-numbers" style="white-space: pre-wrap;">
+					&lt;img srcset="Assets/img/1.png 1x,
+					Assets/img/2.jpg 2x"
+					&gt;
+					</code>
+				</pre>
+			<h3>Ejemplo :</h3>
+			<img srcset="Assets/img/1.png 1x,
+			Assets/img/2.jpg 2x"
+			>
+			</section>
+
+			<section>
+			<h3>2)  srcset w </h3>
+			<p>Descripción: esta etiqueta se utiliza segun la variación del tamaño de la imagen.</p>
+			<h3>Codigo :</h3>
+			
+				<pre rel="HTML">
+					<code class="language-html line-numbers" style="white-space: pre-wrap;">
+					&lt;img srcset="Assets/img/1.png 500w,
+					Assets/img/2.jpg 800w"
+					&gt;
+					</code>
+				</pre>
+			<h3>Ejemplo :</h3>
+			<img srcset="Assets/img/1.png 1x,
+			Assets/img/2.jpg 2x"
+			>
+			</section>
+
+
+			
+	</div>
+	<center><a href="index.html"><img src="Assets/img/boton.jpg" class="boton" alt="Regresar"></a></center>
+	<script src="Assets/js/prism.js" type="text/javascript"></script>
+</body>
+</html>
+

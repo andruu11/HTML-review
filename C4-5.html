@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<link rel="stylesheet" href="Assets/css/prism.css">
+	<link rel="stylesheet" href="Assets/css/class.css">
+	<title>HTML5</title>
+</head>
+<body>
+	<div class="contenido">
+		<h2>Tablas</h2>
+	</div>
+	<div class="codigo">
+			<section>
+			<p>- Las tablas nos sirven para organizar los datos dentro de filas y columnas, se utilizan mediante la tecla "table".
+			</p>
+			<p>- Las filas se identifican con la etiqueta "tr"</p>
+			<p>- Las columnas se identifican con la etiqueta "td"</p>
+			<p>- En thead se define la cabecera de la tabla, en tbody el contenido de la tabla, en tfoot se define el pie de la tabla</p>
+			<p>- colspan nos sirve para ampliar la cantidad de columnas en relacion al campo, colrow nos sirve para ampliar el numero de fila segun al campo</p>
+			<p>- caption nos ayuda a definir el titulo de la tabla</p>
+			<p>- La etiqueta colgroup agrupa la fila en base a la etiqueta col</p>
+			<h3>Codigo :</h3>
+			
+				<pre rel="HTML">
+					<code class="language-html line-numbers" style="white-space: pre-wrap;">
+					&lt;table border="1"&gt;
+						&lt;caption&gt;Datos de Dpto. RRHH&lt;/caption&gt;
+						&lt;colgroup&gt;
+							&lt;col span="3"&gt;
+							&lt;col style="background: green"&gt;
+						&lt;/colgroup&gt;
+						&lt;thead&gt;
+							&lt;tr&gt;
+								&lt;td rowspan="2"&gt;C.I.&lt;/td&gt;
+								&lt;td&gt;Nombres&lt;/td&gt;
+								&lt;td&gt;Apellidos&lt;/td&gt;
+								&lt;td rowspan="2"&gt;Telefono&lt;/td&gt;
+							&lt;/tr&gt;
+							&lt;tr&gt;
+								
+								&lt;td&gt;completos&lt;/td&gt;
+								&lt;td&gt;completos&lt;/td&gt;
+							&lt;/tr&gt;
+						&lt;/thead&gt;
+						&lt;tbody&gt;
+							&lt;tr&gt;
+								&lt;td&gt;598471&lt;/td&gt;
+								&lt;td&gt;Juan Carlos&lt;/td&gt;
+								&lt;td&gt;Perez Cruz&lt;/td&gt;
+								&lt;td&gt;2578956&lt;/td&gt;
+							&lt;/tr&gt;
+							&lt;tr&gt;
+								&lt;td&gt;598471&lt;/td&gt;
+								&lt;td colspan="2"&gt;Maria Miriam&lt;/td&gt;
+								
+								&lt;td&gt;2578956&lt;/td&gt;
+							&lt;/tr&gt;
+							&lt;tr&gt;
+								&lt;td&gt;598471&lt;/td&gt;
+								&lt;td&gt;Juan Carlos&lt;/td&gt;
+								&lt;td&gt;Perez Cruz&lt;/td&gt;
+								&lt;td&gt;2578956&lt;/td&gt;
+							&lt;/tr&gt;
+							&lt;tr&gt;
+								&lt;td&gt;598471&lt;/td&gt;
+								&lt;td&gt;Juan Carlos&lt;/td&gt;
+								&lt;td&gt;Perez Cruz&lt;/td&gt;
+								&lt;td&gt;2578956&lt;/td&gt;
+							&lt;/tr&gt;
+						&lt;/tbody&gt;
+						&lt;tfoot&gt;
+							&lt;tr style="background: yellow"&gt;
+								&lt;td&gt;C.I.&lt;/td&gt;
+								&lt;td&gt;Nombres&lt;/td&gt;
+								&lt;td&gt;Apellidos&lt;/td&gt;
+								&lt;td&gt;Telefono&lt;/td&gt;
+							&lt;/tr&gt;
+						&lt;/tfoot&gt;
+					&lt;/table&gt;
+					</code>
+				</pre>
+			<h3>Ejemplo :</h3>
+
+			<table border="1">
+				<caption>Datos de Dpto. RRHH</caption>
+				<colgroup>
+					<col span="3">
+					<col style="background: green">
+					
+				</colgroup>
+				<thead>
+					<tr>
+						<td rowspan="2">C.I.</td>
+						<td>Nombres</td>
+						<td>Apellidos</td>
+						<td rowspan="2">Telefono</td>
+					</tr>
+					<tr>
+						
+						<td>completos</td>
+						<td>completos</td>
+						
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>598471</td>
+						<td>Juan Carlos</td>
+						<td>Perez Cruz</td>
+						<td>2578956</td>
+					</tr>
+					<tr>
+						<td>598471</td>
+						<td colspan="2">Maria Miriam</td>
+						
+						<td>2578956</td>
+					</tr>
+					<tr>
+						<td>598471</td>
+						<td>Juan Carlos</td>
+						<td>Perez Cruz</td>
+						<td>2578956</td>
+					</tr>
+					<tr>
+						<td>598471</td>
+						<td>Juan Carlos</td>
+						<td>Perez Cruz</td>
+						<td>2578956</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr style="background: yellow">
+						<td>C.I.</td>
+						<td>Nombres</td>
+						<td>Apellidos</td>
+						<td>Telefono</td>
+					</tr>
+				</tfoot>
+			</table>
+			</section>
+	</div>
+	<center><a href="index.html"><img src="Assets/img/boton.jpg" class="boton" alt="Regresar"></a></center>
+	<script src="Assets/js/prism.js" type="text/javascript"></script>
+</body>
+</html>
+

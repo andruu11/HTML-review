@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<link rel="stylesheet" href="Assets/css/prism.css">
+	<link rel="stylesheet" href="Assets/css/class.css">
+	<title>HTML5</title>
+</head>
+<body>
+	<div class="contenido">
+		<h2>Formularios</h2>
+	</div>
+	<div class="codigo">
+			<section>
+			<p>- Descripción:  Un formulario es un contenedor de elementos que reciben, muestran y agrupan estos elementos.</p>
+			<p>- fieldset: Esta etiqueta nos permite agrupar elementos del formulario.</p>
+			<p>- legend: Esta etiqueta nos permite poner un titulo a la agrupacion fieldset.</p>
+			<p>- label: Esta etiqueta nos permite mostrar datos.</p>
+			<p>- input: Esta etiqueta nos permite intoducir datos datos.</p>
+			<p>- input type submit: Esta etiqueta nos permite enviar datos al script que procesa los datos ingresados en el formulario.</p>
+			<p>- button: Esta etiqueta nos permite enviar datos al script que procesa los datos ingresados en el formulario.</p>
+			<p>- input type image: Esta etiqueta nos permite enviar datos al script que procesa los datos ingresados en el formulario, solo que usa como boton una imagen.</p>
+			<h3>Codigo :</h3>
+			
+				<pre rel="HTML">
+					<code class="language-html line-numbers" style="white-space: pre-wrap;">
+					&lt;form action="script.php" method="post" autocomplete="off"&gt;
+				&lt;fieldset&gt;
+					&lt;legend&gt;Datos del Alumno:&lt;/legend&gt;
+				&lt;label&gt;Nombres: &lt;input&gt;&lt;/label&gt;&lt;br&gt;&lt;br&gt;
+				&lt;label&gt;Apellidos: &lt;input&gt;&lt;/label&gt;
+				&lt;/fieldset&gt;
+
+				&lt;fieldset&gt;
+					&lt;legend&gt;Datos de curso:&lt;/legend&gt;
+				&lt;label&gt;Grado: &lt;input&gt;&lt;/label&gt;&lt;br&gt;&lt;br&gt;
+				&lt;label&gt;Carrera: &lt;input&gt;&lt;/label&gt;
+				&lt;/fieldset&gt;&lt;br&gt;&lt;br&gt;
+				&lt;button&gt;Registrar&lt;/button&gt;
+				&lt;input type="submit" value="Guadar Datos"&gt;
+				&lt;input type="image" src="Assets/img/guardar.png" width="50px"&gt;
+			&lt;/form&gt;
+					</code>
+				</pre>
+			<h3>Ejemplo :</h3>
+			<form action="script.php" method="post" autocomplete="off">
+				<fieldset>
+					<legend>Datos del Alumno:</legend>
+				<label>Nombres: <input></label><br><br>
+				<label>Apellidos: <input></label>
+				</fieldset>
+
+				<fieldset>
+					<legend>Datos de curso:</legend>
+				<label>Grado: <input></label><br><br>
+				<label>Carrera: <input></label>
+				</fieldset><br><br>
+				<button>Registrar</button>
+				<input type="submit" value="Guadar Datos">
+				<input type="image" src="Assets/img/guardar.png" width="50px">
+			</form>
+
+	</div>
+	<center><a href="index.html"><img src="Assets/img/boton.jpg" class="boton" alt="Regresar"></a></center>
+	<script src="Assets/js/prism.js" type="text/javascript"></script>
+</body>
+</html>
+
