@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<link rel="stylesheet" href="Assets/css/prism.css">
+	<link rel="stylesheet" href="Assets/css/class.css">
+	<title>HTML5</title>
+</head>
+<body>
+	<div class="contenido">
+		<h2>textarea y datalist</h2>
+	</div>
+	<div class="codigo">
+			<section>
+			<h3>1)  textarea</h3>
+			<p>Descripción:  Campo extenso para escribir un mensaje o un texto largo, el atributo maxlength define el maximo de caracteres permitido, cols y rows el tamaño del textarea.</p>
+			
+			
+				<pre rel="HTML">
+					<code class="language-html line-numbers" style="white-space: pre-wrap;">
+						&lt;textarea name="mensaje" id="mensaje" cols="30" rows="3" maxlength="50"&gt;&lt;/textarea&gt;
+			
+					</code>
+				</pre>
+			<h3>Ejemplo :</h3>
+			<textarea name="mensaje" id="mensaje" cols="30" rows="3" maxlength="50"></textarea>
+			</section>
+
+			<section>
+			<h3>2)  datalist </h3>
+			<p>Descripción: Es un almacen de datos que en conjunto o asociado con un input y el atributo list se convierte en un buscador de opciones</p>
+			
+			<h3>Codigo :</h3>
+			
+				<pre rel="HTML">
+					<code class="language-html line-numbers" style="white-space: pre-wrap;">
+					&lt;datalist id="paises"&gt;
+						&lt;option value="Bolivia"&gt;		
+						&lt;option value="España"&gt;
+						&lt;option value="Francia"&gt;
+						&lt;option value="Finlandia"&gt;		
+					&lt;/datalist&gt;
+					</code>
+				</pre>
+			<h3>Ejemplo :</h3>
+			<input list="paises">
+			<datalist id="paises">
+				<option value="Bolivia">		
+				<option value="España">
+				<option value="Francia">
+				<option value="Finlandia">		
+				</datalist>
+			</section>
+	</div>
+	<center><a href="index.html"><img src="Assets/img/boton.jpg" class="boton" alt="Regresar"></a></center>
+	<script src="Assets/js/prism.js" type="text/javascript"></script>
+</body>
+</html>

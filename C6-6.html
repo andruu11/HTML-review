@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<link rel="stylesheet" href="Assets/css/prism.css">
+	<link rel="stylesheet" href="Assets/css/class.css">
+	<title>HTML5</title>
+</head>
+<body>
+	<div class="contenido">
+		<h2>Atributos de Formularios</h2>
+	</div>
+	<div class="codigo">
+			<section>
+			<p>- required: atributo para solicitar llenado obligatorio de un input.</p>
+			<p>- disabled: atributo para desactivar un input.</p>
+			<p>- checked: atributo para autoseleccionado en un input checkbox o un input radio.</p>
+			<p>- selected: atributo para seleccionar un campo del select o combobox.</p>
+			<p>- multiple: atributo para hacer un select de opcion multiple.</p>
+			<p>- autofocus: atributo para al iniciar una pagina seleccione automaticamente ese campo.</p>
+			<p>- readonly: atributo de solo lectura.</p>
+			<p>- maxlength: atributo para determinar el numero maximo de caracteres a introducir en un input.</p>
+			<p>- minlength: atributo para determinar el numero minimo de caracteres a introducir en un input.</p>
+			<p>- min: atributo para determinar el numero minimo a introducir en un input tipo number.</p>
+			<p>- max: atributo para determinar el numero masximo a introducir en un input tipo number.</p>
+			<p>- step: atributo para determinar el intervalo a introducir en un input tipo number.</p>
+			<p>- tabindex: atributo para determinar el orden de tabulacion entre input.</p>
+			<p>- autocomplete off: atributo que se ubica en la etiqueta form, para desactivar el autocompletado en los input.</p>
+			
+				<pre rel="HTML">
+					<code class="language-html line-numbers" style="white-space: pre-wrap;">
+						&lt;form action="script.php" autocomplete="off"&gt;
+							&lt;label&gt;Nombre:
+							&lt;input type="text" tabindex="1" required&gt;&lt;/label&gt;&lt;br&gt;&lt;br&gt;
+							&lt;label&gt;C.I.:
+							&lt;input type="text" value="785947" disabled&gt;&lt;/label&gt;&lt;br&gt;&lt;br&gt;
+							&lt;label&gt;
+								&lt;input type="checkbox" checked name="categorias"&gt;Deportes
+							&lt;/label&gt;
+							&lt;label&gt;
+								&lt;input type="checkbox" name="categorias"&gt;Musica
+							&lt;/label&gt;&lt;br&gt;&lt;br&gt;
+							&lt;select name="paises" id="paises"&gt;
+								&lt;option value="Bolivia"&gt;Bolivia&lt;/option&gt;
+								&lt;option selected value="Argentina"&gt;Argentina&lt;/option&gt;
+								&lt;option value="Chile"&gt;Chile&lt;/option&gt;
+								&lt;option value="Peru"&gt;Peru&lt;/option&gt;
+							&lt;/select&gt;&lt;br&gt;&lt;br&gt;
+							&lt;label&gt;Correo:
+							&lt;input type="email" autofocus&gt;&lt;/label&gt;&lt;br&gt;&lt;br&gt;
+							&lt;label&gt;Telefono:
+							&lt;input type="tel" readonly value="59874521"&gt;&lt;/label&gt;&lt;br&gt;&lt;br&gt;
+							&lt;label&gt;C.I. (minimo 7 caracteres-maximo 10 caracteres):
+							&lt;input type="text" tabindex="2" minlength="7" maxlength="10" &gt;&lt;/label&gt;&lt;br&gt;&lt;br&gt;
+							&lt;label&gt;Cant. de productos:
+							&lt;input type="number" min="2" max="50" step="2"&gt;&lt;/label&gt;&lt;br&gt;&lt;br&gt;
+							&lt;button&gt;Enviar&lt;/button&gt;
+						&lt;/form&gt;
+			
+					</code>
+				</pre>
+			<h3>Ejemplo :</h3>
+			<form action="script.php" autocomplete="off">
+				<label>Nombre:
+				<input type="text" tabindex="1" required></label><br><br>
+				<label>C.I.:
+				<input type="text" value="785947" disabled></label><br><br>
+				<label>
+					<input type="checkbox" checked name="categorias">Deportes
+				</label>
+				<label>
+					<input type="checkbox" name="categorias">Musica
+				</label><br><br>
+				<select name="paises" id="paises">
+					<option value="Bolivia">Bolivia</option>
+					<option selected value="Argentina">Argentina</option>
+					<option value="Chile">Chile</option>
+					<option value="Peru">Peru</option>
+				</select><br><br>
+				<label>Correo:
+				<input type="email" autofocus></label><br><br>
+				<label>Telefono:
+				<input type="tel" readonly value="59874521"></label><br><br>
+				<label>C.I. (minimo 7 caracteres-maximo 10 caracteres):
+				<input type="text" tabindex="2" minlength="7" maxlength="10" ></label><br><br>
+				<label>Cant. de productos:
+				<input type="number" min="2" max="50" step="2"></label><br><br>
+				<button>Enviar</button>
+			</form>
+			</section>
+
+			
+	</div>
+	<center><a href="index.html"><img src="Assets/img/boton.jpg" class="boton" alt="Regresar"></a></center>
+	<script src="Assets/js/prism.js" type="text/javascript"></script>
+</body>
+</html>
